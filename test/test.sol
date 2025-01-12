@@ -28,4 +28,14 @@ contract HelloWorld {
     function addresInfo(string memory helloWorld) internal  pure returns ( string memory) {
         return string.concat(helloWorld, " from dogin's contract. ");
     } 
+
+    /*
+    常见数据存储模式
+    1.storage:永久性存储,如 strVar
+    2.memory:暂时性存储,如函数中传入的变量
+    3.calldata:暂时性存储,和 memory 的区别是在运行时无法更改
+    4.stack
+    5.codes
+    6.logs
+    */
 }
